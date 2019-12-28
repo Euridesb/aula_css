@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+body {
+	
+	
+  	
+}
+
+h1 {
+  	color: red;
+  	text-align: center;
+  	font-size: 40;
+  	margin-top: 3%;
+}
+
+p {
+  	font-family: verdana;
+  	font-size: 20px;
+  	text-align: justify;
+	font-size: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 4%;
+ 	color: grey;
+
+ 	
+}
+
+.a{
+	border-bottom: 2px solid red;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 2px;
+
+}
+
+
+
+iframe {
+
+	width: 489px;
+	height: 369px;
+	float: right;
+	margin-left: 1%;
+	margin-right: 10%;
+	margin-top: 3%;
+
+}
+
+
+
+.vertical-menu {
+  width: 150px;
+  margin-left: 10%;
+  
+  margin-right: 1%;
+  float: left;
+  margin-top: 3%
+}
+
+.vertical-menu a {
+  background-color: #b3c6ff;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  
+
+}
+
+.vertical-menu a:hover {
+  background-color:#9494b8;
+  
+}
+
+.vertical-menu a.active {
+  background-color: #9494b8;
+  color: white;
+  
+}
+
+
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 6%
+  
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+</body>
+
+
+</html>
