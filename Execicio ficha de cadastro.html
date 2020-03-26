@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+
+  <title> Ficha de Cadastro </title>
+  <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+  
+ </head>
+
+ <body style="text-align: center; background-color: white; margin: 0px 0px 0px 0px ;">
+ 
+
+
+ <h2 style="background-color: yellow; height: 60px; width: 700px; float: right; padding-top: 25px; text-align: left; font-size: 20px;color: black;font-family: 'Baloo 2', cursive; margin-top: 0px;">e Cadastro</h2>
+
+
+  <h2 style="background-color: green; height: 60px;padding-top: 25px; color: black; margin-top: 0px;width: 700px; text-align: right; font-size: 20px;font-family: 'Baloo 2', cursive;">Ficha d</h2>
+
+<form action="file:///C:/Users/eurid/OneDrive/%C3%81rea%20de%20Trabalho/Programa%C3%A7%C3%A3o-aula/html/Script_do_Formulario.php" method="post">
+
+<!-- DADOS PESSOAIS-->
+<fieldset style="width: 50%; margin-left: 25%; background-color: #b3ffb3; box-shadow: 5px 5px 5px 5px black; ">
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tbody><tr>
+   <td>
+    <label for="nome" placeholder="Nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+   
+
+
+
+   <td>
+  
+ <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+  
+
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+   
+
+
+    <label>CPF:</label>
+
+
+</td>
+    <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ 
+
+
+
+
+ </tbody></table>
+</fieldset>
+
+<br>
+<!-- ENDEREÇO -->
+<fieldset style="width: 50%;margin-left: 25%; background-color: #b3ffb3; margin-top: 5%; box-shadow: 5px 5px 5px 5px black;">
+ <legend>Dados de Endereço</legend>
+ <table cellspacing="10">
+
+  <tbody><tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td align="left">
+    <select name="estado"> 
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </tbody></table>
+</fieldset>
+<br>
+
+<!-- DADOS DE LOGIN -->
+<fieldset style="width: 50%;margin-left: 25%; background-color: #b3ffb3; margin-top: 5%; box-shadow: 5px 5px 5px 5px black;">
+ <legend>Inf. Profissional</legend>
+ <table cellspacing="10">
+  
+
+
+  
+  <tbody><tr>
+   <td>
+    <label for="login"> Profissão: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="login">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="pass"> Empresa: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="pass">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="passconfirm"> Cargo: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="passconfirm">
+   </td>
+  </tr>
+
+
+
+  <tr>
+   
+
+
+   <td>
+    <label for="email">E-mail: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="imagem">Whatsapp:</label>
+   </td>
+   <td>
+    <input type="text" name="login">
+
+   </td>
+  </tr>
+
+ 
+
+
+
+
+ </tbody></table>
+</fieldset>
+<br>
+
+
+   
+  <button style="margin-top: 20px;">
+<a href="https://receptorcia.com.br/cinebox,neonsat,duosat,tutorial,recovery,receptores,freesky,%20iptv,%20htv,%20controle%20remoto/descubra-qual-o-melhor-tipo-receptor-para-voce" style="text-decoration: none; color: black;">Submit</a>
+  </button>
+ 
+
+
+</form>
+
+
+
+
+<div style="border-top: 5px solid grey ; margin-top: 20px;"></div>
+
+
+  <p style="text-align: center; background: #cce6ff; font-size: 20px;  color: black; margin: 0px 0px 0px 0px;"> Feito pela Escola RDI </p>
+
+
+
+ 
+</body>
+</html>

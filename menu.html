@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 1px;
+  background-color: #ccc;
+  height: 65px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+ 
+  
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-anchor"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+         <div class="column">
+          <a href="https://quatrorodas.abril.com.br/testes/amigos-do-bolso-estes-carros-sao-campeoes-de-custo-beneficio-no-brasil/" style="font-size: 25px; "><i class="fa fa-car" aria-hidden="true"></i></a> 
+         </div>
+         <div class="column">
+          <a href="https://blog.racon.com.br/meu-primeiro-carro/melhores-motos-afinal-quais-apresentam-o-melhor-custo-beneficio/" style="font-size: 25px;"><i class="fa fa-motorcycle" aria-hidden="true"></i></a> 
+         </div>
+         <div class="column">
+          <a href="https://blogwlmscania.itaipumg.com.br/como-comprar-caminhoes-usados-4-coisas-que-voce-precisa-saber/" style="font-size: 25px;"><i class="fa fa-truck" aria-hidden="true"></i></a> 
+        </div>
+        <div class="column">
+          <a href="https://exame.abril.com.br/seu-dinheiro/quanto-custa-comprar-e-manter-um-barco/2/" style="font-size: 25px;"><i class="fa fa-ship" aria-hidden="true"></i></a> 
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div style="padding:16px">
+  <h3>Responsive Mega Menu (Full-width dropdown in navbar)</h3>
+  <p>Hover over the "Dropdown" link to see the mega menu.</p>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+</body>
+</html>

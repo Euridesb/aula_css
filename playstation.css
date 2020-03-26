@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+	<style >
+	 
+   div {
+
+    text-align: center;
+
+   }
+
+
+		body {
+
+   }
+
+   
+div.menu{
+  
+  font-size: 25px;
+  text-align: center;
+  margin-left: 10%;
+  background-color: #4d4dff;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Nunito', sans-serif;
+  height: 35px;
+  padding-top: 10px;
+}
+
+
+div.menu a:hover{
+ background-color: #1a8cff;
+ width: 30px;
+
+}
+
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-family: 'Bowlby One SC', cursive;
+    }
+
+
+    p { 
+
+      text-align: justify;
+      font-size: 30px;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      background-color: #80bfff;
+
+     }
+
+
+img {
+	
+
+  width: 40%;
+  height: 10%;
+  float: right;
+  margin-right: 10%;
+  margin-left: 1%;
+  margin-top: 10px;
+}
+
+
+
+
+	</style>
+
+
+
+
+</head>
+
+
+
+
+</html>

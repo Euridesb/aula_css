@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel  {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  
+}
+
+.sidepanel a {
+  padding: 1% 1% 1% 1%;
+  text-decoration: none;
+  font-size: 130%;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-left: 2%
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 200%;
+}
+
+.openbtn {
+  font-size: 120%;
+  cursor: pointer;
+  background-color: #a6a6a6;
+  color: white;
+  padding: 1% 1%;
+  border: none;
+ 
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+</style>
+
+
+
+<style>
+
+body {margin:0}
+
+.icon-bar {
+	
+  	width: 6%;
+  	background-color: white;
+  	float: left;
+  	margin-right: 2%;
+
+  	
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16%;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 230%;
+}
+
+.icon-bar a:hover {
+  background-color:  #666666;
+}
+
+.active {
+  background-color:  white;
+
+}
+
+figcaption {
+  text-align: center;
+  font-size: 130%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+
+
+}
+
+img{
+  font-size: 3%;
+}
+
+
+
+</style>
+
+
+
+<body>
+
+
+
+<button class="openbtn" onclick="openNav()" style="font-size: 200%; float: left; ">☰ <i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Youtube</button> 
+
+
+<button style="background-color: lightblue; width: 7%; float: right; margin-top: 1%;"><a href="#" style="text-decoration: none; color: black; padding: 1%; font-size: 150%;"><i class="fa fa-user-circle-o"></i>Login</a></button>
+
+
+
+<div style="text-align: center;  margin: 0% 0% 0% 0%">
+  
+  <tbody><tr>
+   <td>
+    <label for="nome"></label>
+   </td>
+   <td align="left">
+    
+    <input type="text" name="email" style="margin-bottom: 5%; width: 40%; margin-top: 1%;">
+    
+    <button ><a href="#" style="text-decoration: none;font-size: 110%;color: black;"> Pesquisar </a></button>
+
+   
+   </td>
+</div>
+
+
+
+
+
+
+
+
+<div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#"><i class="fa fa-institution"> Inicio</i></a>
+    <a href="#"><i class="fa fa-free-code-camp"> Alta</i></i></a>
+    <a href="#"><i class="fa fa-youtube-play"></i>Inscrição</i></i></a>
+  
+<div  style="border-top: 1px solid #262626 ; margin: 1% 0 1% 0 ; width: 10%"> </div>
+    
+    <a href="#"><i class="fa fa-youtube-play"></i> Biblioteca</a>
+    <a href="#"><i class="fa fa-clock-o"></i> Histórico</a>
+
+  <div  style="border-top: 1px solid #262626 ; margin: 1% 0 1% 0 ; width: 10%"> </div>
+
+ 
+
+
+    <a href="#"><i class="fa fa-gamepad" style="margin-right: 1%;"></i>Jogos</a>
+    <a href="#"><i class="fa fa-music" style="margin-right: 1%"></i>Musicas</a>
+    <a href="#"><i class="fa fa-life-ring" aria-hidden="true" style="margin-right: 1%;"></i>Esportes</a>
+    <a href="#"><i class="fa fa-play-circle-o" style="margin-right: 1%;"></i>Filmes</a>
+    <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true" style="margin-right: 1%"></i>Notícias</a>
+    <a href="#"><i class="fa fa-podcast" aria-hidden="true" style="margin-right: 1%"></i>ao vivo</a>
+    <a href="#"><i class="fa fa-caret-square-o-right" aria-hidden="true" style="margin-right: 1%"></i>Destaque</a>
+    <a href="#"><i class="fa fa-play-circle-o" aria-hidden="true" style="margin-right: 1%"></i>Video em 360º</a>
+    <a href="#"><i class="fa fa-plus-square" aria-hidden="true" style="margin-right: 1%"></i>Procurar canais</a>
+    <a href="#"><i class="fa fa-cog" aria-hidden="true" style="margin-right: 1%"></i>Configurações</a>
+    <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true" style="margin-right: 1%"></i>Ajuda</a>
+    <a href="#"><i class="fa fa-trash-o" aria-hidden="true" style="margin-right: 1%"></i>Lixo</a>
+
+
+
+</div>
+
+
+
+
+<div class="icon-bar" >
+
+  <a class="active" href="#" style="color: black;"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+
+
+      <div class="row bottom-row">
+     
+
+      
+      
+
+      </div>
+
+
+<h1></h1>
+
+
+<figure style="float: right; margin: 0% 10% 0% 2% ">
+
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/sQ3Ezqgm45o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;">Porta dos Fundos<br>Pulando a Cerca<br>98 mil Visualizações - há 7 anos</figcaption>
+
+</figure>
+
+
+<figure style="float: right; margin: 0% 0% 0% 0%">
+
+ 
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/4vwVSuGSGlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;">Porta dos Fundos <br>decimo dentista<br>250 mil Visualizações - há 8 anos</figcaption>
+
+</figure>
+
+<figure style="float: right; margin: 0% 2% 0% 0%">
+
+  
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/aai4r5y8bAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos<br>Vicio<br>125 mil Visualizações - há 9 anos</figcaption>
+
+</figure>
+
+<figure style="float: right; margin: 0% 10% 0% 2% ">
+
+  
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/XOhTEKEOk4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos<br>Coach<br>53 mil Visualizações - há 4 anos</figcaption>
+
+</figure>
+
+<figure style="float: right;  margin: 0% 0% 0% 0%">
+
+ 
+
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/qsQmYcWT_NM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos <br>Antidoping<br>92 mil Visualizações - há 6 anos</figcaption>
+
+</figure>
+
+
+
+
+<figure style="float: right; margin: 0% 2% 0% 0%">
+
+  
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/qsQmYcWT_NM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos <br>Antidoping<br>100 mil Visualizações - há 6 meses</figcaption>
+
+</figure>
+
+
+
+<figure style="float: right; margin: 0% 10% 0% 2%">
+
+  
+
+
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/qsQmYcWT_NM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos <br>Antidoping <br>155 mil Visualizações - há 3 anos</figcaption>
+
+</figure>
+
+
+
+<figure style="float: right; margin: 0% 0% 0% 0%">
+
+  
+
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/tRcgyKVbWW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos <br>Lulonaro<br>145 mil Visualizações - há 1 anos</figcaption>
+
+</figure>
+
+
+
+<figure style="float: right; margin: 0% 2% 0% 0%">
+
+  
+
+<iframe width="400" height="222" src="https://www.youtube.com/embed/o56LGN-zjlE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<figcaption><img src="porta dos fundos.png" style=" width: 13%; height: 13%;float: left;"> Porta dos Fundos <br>Carnavirus<br>115 mil Visualizações - há 2 anos</figcaption>
+
+</figure>
+
+
+<p></p>
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "100%"
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+
+
+<h3 style="background-color:#ffb399; margin: 61% 0% 0% 0%; text-align: center; ">Feito Pela Escola RTI</h3>
+
+</body>
+</html>

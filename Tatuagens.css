@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+	<style >
+
+
+	 
+   div {
+
+    text-align: center;
+
+   }
+
+
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 20%;
+      margin-right: 20%;
+      font-family: 'Bowlby One SC', cursive;
+      color: black;
+    }
+
+
+    p { 
+
+      text-align: justify;
+      font-size: 30px;
+      margin-left: 1%;
+      margin-right: 1%;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      background-color: black;
+      padding: 25px;
+
+
+     }
+
+
+img {
+	
+
+  width: 40%;
+  height: 10%;
+  float: right;
+  margin-right: 2%;
+  margin-left: 1%;
+  margin-top: 35px;
+}
+
+</style>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #999999;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+  background-color: #ccc;
+  height: 65px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+     body {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+ 
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  margin-left: 5%;
+  opacity: 0;
+  animation: display 10s infinite;
+  margin-bottom: 2%;
+  margin-top: 0px;
+
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+
+
+
+</html>
